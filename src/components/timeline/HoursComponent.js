@@ -8,21 +8,14 @@ const HoursComponent = (props) => {
 };
 
 const TimeBlock = styled.div`
-  width: 100px;
-  height: 50px;
   float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-
+  background-color: red;
 `;
 
 const Times = styled.div`
-  width: 100px;
-  height: 50px;
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: black;
+  text-align: right;
+  color: blue;
+  font-size: 12px;
 `;
 
 export default HoursComponent;

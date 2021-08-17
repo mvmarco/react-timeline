@@ -3,9 +3,9 @@ const EventsView = () => {
   return (
     <CalendarView>
       <Event>
-        <div className="info"></div>
-        <div className="event-status"></div>
-        <div className="time"></div>
+        <div className="info">test</div>
+        <div className="event-status">111111</div>
+        <div className="time">222222</div>
       </Event>
     </CalendarView>
   );
@@ -23,7 +23,9 @@ const CalendarView = styled.div`
 
 const Event = styled.div`
   border-style: solid;
-  border-radius: 20px;
+  border-color: #d6d6d6;
+  border-left-color: #496fa4;
+  background-color: #ffffff;
   position: absolute;
   box-sizing: border-box;
 `;

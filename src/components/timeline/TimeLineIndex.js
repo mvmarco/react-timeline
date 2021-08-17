@@ -15,7 +15,5 @@ export default function TimeLineIndex() {
 }
 
 const TimeLineContainer = styled.div`
-  width: 80px;
-  background-color: black;
   display: flex;
 `;
