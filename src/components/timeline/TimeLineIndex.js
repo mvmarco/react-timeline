@@ -12,7 +12,7 @@ export default function TimeLineIndex() {
       <Nav>
         <DateAndIcons>
           <h1>{`${"18 August"} ${DATE.getFullYear()}`}</h1>
-          <h1>icon // icon // icon</h1>
+          <h1>icon // icon {" | "} icon</h1>
         </DateAndIcons>
         <Test>
           <hr></hr>
@@ -21,7 +21,7 @@ export default function TimeLineIndex() {
       <Cards>
         <TimeEntry>
           <div className="title">
-            <h4 style={{ color: "black" }}>Time Entry</h4>
+            <h4 style={{ color: "black", fontWeight: "normal" }}>Time Entry</h4>
           </div>
           <div className="intervalQuantity">
             <h4>Interval/Quantity</h4>
