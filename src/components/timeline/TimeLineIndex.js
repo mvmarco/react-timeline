@@ -4,16 +4,24 @@ import { HOURS } from "./utils/constantsHours";
 import GlobalStyle from "../../styles/GlobalStyle";
 
 export default function TimeLineIndex() {
-    const DATE = new Date();
+  const DATE = new Date();
 
   return (
     <>
       <GlobalStyle />
-      <Nav>{DATE.getFullYear()}</Nav>
+      <Nav>
+        <DateAndIcons>
+          <h1>{`${"18 August"} ${DATE.getFullYear()}`}</h1>
+          <h1>icon // icon // icon</h1>
+        </DateAndIcons>
+        <Test>
+          <hr></hr>
+        </Test>
+      </Nav>
       <Cards>
         <TimeEntry>
           <div className="title">
-            <h4 style={{color: "black"}}>Time Entry</h4>
+            <h4 style={{ color: "black" }}>Time Entry</h4>
           </div>
           <div className="intervalQuantity">
             <h4>Interval/Quantity</h4>
@@ -40,26 +48,31 @@ export default function TimeLineIndex() {
 }
 // STYLES
 const Nav = styled.div`
-width: 100%;
+  width: 100%;
   color: #20b295;
-  background-color: #196262;
-  color: white;
-  padding: 20px;
+  /* background-color: #196262; */
+  color: black;
+  padding: 20px 20px 0px 20px;
 `;
+const DateAndIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const TimeLineContainer = styled.div`
-width: 100%;
+  width: 100%;
   float: left;
   background-color: #ffffff;
   display: flex;
 `;
 const Wrapper = styled.div`
-width: 100%;
+  width: 100%;
 `;
 ///////////////////////////////////////
 const Cards = styled.div`
- display: flex;
- justify-content: space-between;
- padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 `;
 const TimeEntry = styled.div`
   display: flex;
@@ -78,4 +91,15 @@ const Calendar = styled.div`
   background-color: #e9e9e9;
   border-radius: 16px;
   color: #20b295;
+`;
+const Test = styled.div`
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #939393;
+  padding: 26px 20px 0px 0px;
+  font-size: 12px;
+  &.hr {
+    border: -1.9px solid;
+  }
 `;
