@@ -1,13 +1,20 @@
 import styled from "styled-components";
+import CalendarViewComponent from "./CalendarViewComponent";
+import QuantityComponent from "./QuantityComponent";
 const HoursComponent = (props) => {
   return (
     <TimeBlock>
       <Times>{props.hour}</Times>
+        <QuantityComponent />
+        <CalendarViewComponent />
     </TimeBlock>
   );
 };
 
-const TimeBlock = styled.div``;
+const TimeBlock = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 const Times = styled.div`
   text-align: center;
@@ -15,5 +22,6 @@ const Times = styled.div`
   padding: 20px;
   font-size: 12px;
 `;
+
 
 export default HoursComponent;
