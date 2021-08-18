@@ -7,8 +7,7 @@ const HoursComponent = (props) => {
   );
 };
 
-const TimeBlock = styled.div`
-`;
+const TimeBlock = styled.div``;
 
 const Times = styled.div`
   text-align: center;

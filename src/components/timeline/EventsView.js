@@ -1,22 +1,42 @@
 import styled from "styled-components";
 const EventsView = () => {
-  return (
-    <CalendarView>
-      <Event>
-        <div className="info">test</div>
-        <div className="event-status">111111</div>
-        <div className="time">222222</div>
-      </Event>
-    </CalendarView>
+  return (      
+    <Wrapper>
+      <QuantityView>
+        <Event>
+          <div className="info">test</div>
+          <div className="event-status">111111</div>
+          <div className="time">222222</div>
+        </Event>
+      </QuantityView>
+      <CalendarView>
+        <Event>
+          <div className="info">test</div>
+          <div className="event-status">111111</div>
+          <div className="time">222222</div>
+        </Event>
+      </CalendarView>
+    </Wrapper>
   );
 };
-const CalendarView = styled.div`
-  width: 600px;
+
+//STYLES
+const Wrapper = styled.div`
+display: flex;
+`;
+const QuantityView = styled.div`
+  width: 560px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 8px;
   background-color: #ececec;
-  height: 720px;
+  float: left;
+  position: relative;
+`;
+const CalendarView = styled.div`
+  width: 560px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ececec;
   float: left;
   position: relative;
 `;
