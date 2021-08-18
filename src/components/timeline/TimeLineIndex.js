@@ -5,15 +5,17 @@ import { HOURS } from "./utils/constantsHours";
 
 export default function TimeLineIndex() {
   return (
+    <>
     <TimeLineContainer>
       {HOURS.map((hour, key) => (
         <HoursComponent hour={hour} key={key} />
       ))}
-      <EventsView />
+      {/* <EventsView /> */}
     </TimeLineContainer>
+    </>
   );
 }
 
 const TimeLineContainer = styled.div`
-  display: flex;
+  float: left;
 `;
