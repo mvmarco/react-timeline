@@ -37,11 +37,9 @@ export default function TimeLineIndex() {
         </Calendar>
       </Cards>
       <TimeLineContainer>
-        <Wrapper>
-          {HOURS.map((hour, key) => (
-            <HoursComponent hour={hour} key={key} />
-          ))}
-        </Wrapper>
+        {HOURS.map((hour, key) => (
+          <HoursComponent hour={hour} key={key} />
+        ))}
       </TimeLineContainer>
     </>
   );
@@ -61,23 +59,22 @@ const DateAndIcons = styled.div`
 
 const TimeLineContainer = styled.div`
   width: 100%;
-  float: left;
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
 `;
-const Wrapper = styled.div`
-  width: 100%;
-`;
+
 ///////////////////////////////////////
 const Cards = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  margin-left: 0px;
 `;
 const TimeEntry = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 49%;
   padding: 20px;
   background-color: #e9e9e9;
   border-radius: 16px;
@@ -86,7 +83,7 @@ const TimeEntry = styled.div`
 const Calendar = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 48%;
   padding: 20px;
   background-color: #e9e9e9;
   border-radius: 16px;

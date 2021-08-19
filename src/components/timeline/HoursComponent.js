@@ -4,15 +4,20 @@ import QuantityComponent from "./QuantityComponent";
 const HoursComponent = (props) => {
   return (
     <TimeBlock>
-      <Times>{props.hour}</Times>
+      <Container style={{ marginRight: "10px" }}>
+        <Times>{props.hour}</Times>
         <QuantityComponent />
+      </Container>
+      <Container>
         <CalendarViewComponent />
+      </Container>
     </TimeBlock>
   );
 };
 
 const TimeBlock = styled.div`
   display: flex;
+  width: 100%;
   justify-content: space-between;
 `;
 
@@ -23,5 +28,9 @@ const Times = styled.div`
   font-size: 12px;
 `;
 
+const Container = styled.div`
+  display: flex;
+  width: 48%;
+`;
 
 export default HoursComponent;

@@ -1,24 +1,20 @@
 import styled from "styled-components";
 const QuantityComponent = (props) => {
   return (
-    <div>
-      <Test>
-        <hr></hr>
-      </Test>
-    </div>
+    <Test>
+      <hr></hr>
+    </Test>
   );
 };
 
-
 const Test = styled.div`
-  width: 800px;
+  width: 100%;
   margin: auto;
-  text-align: center;
   color: #939393;
-  padding: 26px 20px 26px 0px;
+  margin-left: 0px;
   font-size: 12px;
   &.hr {
-    border: -1.9px solid ;
+    border: -1.9px solid;
   }
 `;
 

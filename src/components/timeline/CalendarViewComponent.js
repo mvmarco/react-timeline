@@ -1,23 +1,21 @@
 import styled from "styled-components";
 const CalendarViewComponent = (props) => {
   return (
-    <div>
-      <Test>
-        <hr></hr>
-      </Test>
-    </div>
+    <Test>
+      <hr></hr>
+    </Test>
   );
 };
 
 const Test = styled.div`
-width: 800px;
-margin: auto;
+  width: 100%;
+  margin: auto;
+  margin-right: 20px;
   text-align: center;
   color: #939393;
-  padding: 26px 20px 26px 0px ;
   font-size: 12px;
   &.hr {
-    border: -1.9px solid ;
+    border: -1.9px solid;
   }
 `;
 
